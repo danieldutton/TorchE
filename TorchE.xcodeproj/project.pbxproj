@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A50C1A752668059D00431312 /* TorchEApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50C1A742668059D00431312 /* TorchEApp.swift */; };
-		A50C1A772668059D00431312 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50C1A762668059D00431312 /* ContentView.swift */; };
+		A50C1A772668059D00431312 /* Torch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50C1A762668059D00431312 /* Torch.swift */; };
 		A50C1A79266805A600431312 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50C1A78266805A600431312 /* Assets.xcassets */; };
 		A50C1A7C266805A600431312 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50C1A7B266805A600431312 /* Preview Assets.xcassets */; };
 		A50C1A842668086A00431312 /* button_click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A50C1A832668086A00431312 /* button_click.mp3 */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		A50C1A712668059D00431312 /* TorchE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TorchE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A50C1A742668059D00431312 /* TorchEApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorchEApp.swift; sourceTree = "<group>"; };
-		A50C1A762668059D00431312 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A50C1A762668059D00431312 /* Torch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Torch.swift; sourceTree = "<group>"; };
 		A50C1A78266805A600431312 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A50C1A7B266805A600431312 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A50C1A7D266805A600431312 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,9 +54,9 @@
 		A50C1A732668059D00431312 /* TorchE */ = {
 			isa = PBXGroup;
 			children = (
+				A50C1A862668096300431312 /* Audio */,
+				A50C1A852668095B00431312 /* View */,
 				A50C1A742668059D00431312 /* TorchEApp.swift */,
-				A50C1A762668059D00431312 /* ContentView.swift */,
-				A50C1A832668086A00431312 /* button_click.mp3 */,
 				A50C1A78266805A600431312 /* Assets.xcassets */,
 				A50C1A7D266805A600431312 /* Info.plist */,
 				A50C1A7A266805A600431312 /* Preview Content */,
@@ -70,6 +70,22 @@
 				A50C1A7B266805A600431312 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A50C1A852668095B00431312 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A50C1A762668059D00431312 /* Torch.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A50C1A862668096300431312 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				A50C1A832668086A00431312 /* button_click.mp3 */,
+			);
+			path = Audio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A50C1A772668059D00431312 /* ContentView.swift in Sources */,
+				A50C1A772668059D00431312 /* Torch.swift in Sources */,
 				A50C1A752668059D00431312 /* TorchEApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
