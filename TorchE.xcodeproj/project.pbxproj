@@ -11,6 +11,7 @@
 		A50C1A772668059D00431312 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50C1A762668059D00431312 /* ContentView.swift */; };
 		A50C1A79266805A600431312 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50C1A78266805A600431312 /* Assets.xcassets */; };
 		A50C1A7C266805A600431312 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50C1A7B266805A600431312 /* Preview Assets.xcassets */; };
+		A50C1A842668086A00431312 /* button_click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A50C1A832668086A00431312 /* button_click.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		A50C1A78266805A600431312 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A50C1A7B266805A600431312 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A50C1A7D266805A600431312 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A50C1A832668086A00431312 /* button_click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = button_click.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				A50C1A742668059D00431312 /* TorchEApp.swift */,
 				A50C1A762668059D00431312 /* ContentView.swift */,
+				A50C1A832668086A00431312 /* button_click.mp3 */,
 				A50C1A78266805A600431312 /* Assets.xcassets */,
 				A50C1A7D266805A600431312 /* Info.plist */,
 				A50C1A7A266805A600431312 /* Preview Content */,
@@ -126,6 +129,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A50C1A842668086A00431312 /* button_click.mp3 in Resources */,
 				A50C1A7C266805A600431312 /* Preview Assets.xcassets in Resources */,
 				A50C1A79266805A600431312 /* Assets.xcassets in Resources */,
 			);
