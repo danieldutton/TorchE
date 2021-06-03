@@ -56,6 +56,7 @@
 			children = (
 				A50C1A862668096300431312 /* Audio */,
 				A50C1A852668095B00431312 /* View */,
+				A59D56CE26682995003D082F /* ViewModel */,
 				A50C1A742668059D00431312 /* TorchEApp.swift */,
 				A50C1A78266805A600431312 /* Assets.xcassets */,
 				A50C1A7D266805A600431312 /* Info.plist */,
@@ -86,6 +87,13 @@
 				A50C1A832668086A00431312 /* button_click.mp3 */,
 			);
 			path = Audio;
+			sourceTree = "<group>";
+		};
+		A59D56CE26682995003D082F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
