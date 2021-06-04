@@ -23,12 +23,15 @@ struct TorchView: View {
                             
                             Rectangle()
                                 .foregroundColor(.yellow)
-                            Toggle("", isOn: $isOn)
-                                .frame(alignment: .center)
-                                .onChange(of: isOn, perform: { value in
-                                    torch.toggle(on: isOn)
-                                    mp3Player.playClick()
+                            ZStack {
+                                Toggle("", isOn: $isOn)
+                                    .frame(alignment: .center)
+                                    .labelsHidden()
+                                    .onChange(of: isOn, perform: { value in
+                                        torch.toggle(on: isOn)
+                                        mp3Player.playClick()
                                 })
+                            }
                         }
                     }
             }
