@@ -2,7 +2,6 @@ import AVFoundation
 import Foundation
 
 class Torch {
-    
     func toggle(on: Bool) {
         guard let device = AVCaptureDevice.default(for: .video) else { return }
 

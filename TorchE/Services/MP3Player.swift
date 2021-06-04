@@ -2,7 +2,7 @@ import AVFoundation
 import Foundation
 
 class MP3Player {
-    var player: AVAudioPlayer?
+    private var player: AVAudioPlayer?
     
     func playClick() {
         let path = Bundle.main.path(forResource: "button_click.mp3", ofType: nil)!
