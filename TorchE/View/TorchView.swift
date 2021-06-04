@@ -15,19 +15,10 @@ struct TorchView: View {
                             .foregroundColor(.white)
                             .frame(height: geom.size.height / 25.6)
                         ZStack {
-                            
                             Rectangle()
                                 .foregroundColor(.yellow)
                             ZStack {
-                                Toggle("", isOn: $isOn)
-                                    .frame(alignment: .center)
-                                    .labelsHidden()
-                                    .toggleStyle(SwitchToggleStyle(tint: .orange))
-                                    .scaleEffect(1.4)
-                                    .onChange(of: isOn, perform: { value in
-                                        torch.toggle(on: isOn)
-                                        mp3Player.playClick()
-                                })
+                                TorchToggle(isOn: $isOn)
                             }
                         }
                     }

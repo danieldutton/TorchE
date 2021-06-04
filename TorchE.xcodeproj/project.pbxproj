@@ -15,6 +15,7 @@
 		A5D7646B266A2BEC00E71293 /* Torch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D7646A266A2BEC00E71293 /* Torch.swift */; };
 		A5D7646D266A2F7700E71293 /* MP3Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D7646C266A2F7700E71293 /* MP3Player.swift */; };
 		A5D7647E266A709000E71293 /* TorchImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D7647D266A709000E71293 /* TorchImage.swift */; };
+		A5D76480266A72A900E71293 /* TorchToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D7647F266A72A900E71293 /* TorchToggle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		A5D7646A266A2BEC00E71293 /* Torch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Torch.swift; sourceTree = "<group>"; };
 		A5D7646C266A2F7700E71293 /* MP3Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MP3Player.swift; sourceTree = "<group>"; };
 		A5D7647D266A709000E71293 /* TorchImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorchImage.swift; sourceTree = "<group>"; };
+		A5D7647F266A72A900E71293 /* TorchToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorchToggle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +64,6 @@
 			children = (
 				A50C1A862668096300431312 /* Audio */,
 				A50C1A852668095B00431312 /* View */,
-				A59D56CE26682995003D082F /* ViewModel */,
 				A5D76469266A2BBA00E71293 /* Services */,
 				A50C1A742668059D00431312 /* TorchEApp.swift */,
 				A50C1A78266805A600431312 /* Assets.xcassets */,
@@ -85,6 +86,7 @@
 			children = (
 				A50C1A762668059D00431312 /* TorchView.swift */,
 				A5D7647D266A709000E71293 /* TorchImage.swift */,
+				A5D7647F266A72A900E71293 /* TorchToggle.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -95,13 +97,6 @@
 				A50C1A832668086A00431312 /* button_click.mp3 */,
 			);
 			path = Audio;
-			sourceTree = "<group>";
-		};
-		A59D56CE26682995003D082F /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		A5D76469266A2BBA00E71293 /* Services */ = {
@@ -185,6 +180,7 @@
 			files = (
 				A50C1A772668059D00431312 /* TorchView.swift in Sources */,
 				A50C1A752668059D00431312 /* TorchEApp.swift in Sources */,
+				A5D76480266A72A900E71293 /* TorchToggle.swift in Sources */,
 				A5D7646B266A2BEC00E71293 /* Torch.swift in Sources */,
 				A5D7646D266A2F7700E71293 /* MP3Player.swift in Sources */,
 				A5D7647E266A709000E71293 /* TorchImage.swift in Sources */,
