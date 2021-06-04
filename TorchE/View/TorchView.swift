@@ -9,18 +9,20 @@ struct TorchView: View {
         ZStack {
             Color.blue
                 GeometryReader { geom in
-                    VStack(alignment: .center) {
+                    VStack(spacing: 0) {
                         Image(isOn ? "Torch_On" : "Torch_Off")
                         .resizable()
                         .scaledToFit()
                             .frame(height: geom.size.height / 1.6)
                         .shadow(radius: 8)
                         .padding()
-                        
+                        Rectangle()
+                            .foregroundColor(.white)
+                            .frame(height: geom.size.height / 25.6)
                         ZStack {
                             
                             Rectangle()
-                                .foregroundColor(.yellow)git 
+                                .foregroundColor(.yellow)
                             Toggle("", isOn: $isOn)
                                 .frame(alignment: .center)
                                 .onChange(of: isOn, perform: { value in
