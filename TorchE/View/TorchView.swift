@@ -34,6 +34,7 @@ struct TorchView: View {
                                     .frame(alignment: .center)
                                     .labelsHidden()
                                     .toggleStyle(SwitchToggleStyle(tint: .orange))
+                                    .scaleEffect(1.4)
                                     .onChange(of: isOn, perform: { value in
                                         torch.toggle(on: isOn)
                                         mp3Player.playClick()
