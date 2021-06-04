@@ -2,6 +2,7 @@ import SwiftUI
 
 struct TorchView: View {
     private var torch = Torch()
+    private var mp3Player = MP3Player()
     @State private var isOn = false
     
     var body: some View {
@@ -25,6 +26,7 @@ struct TorchView: View {
                                 .frame(alignment: .center)
                                 .onChange(of: isOn, perform: { value in
                                     torch.toggle(on: isOn)
+                                    mp3Player.playClick()
                                 })
                         }
                     }
@@ -38,5 +40,7 @@ struct TorchView_Previews: PreviewProvider {
         TorchView()
     }
 }
+
+
 
 

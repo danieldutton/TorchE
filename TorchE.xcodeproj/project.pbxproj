@@ -13,6 +13,7 @@
 		A50C1A7C266805A600431312 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50C1A7B266805A600431312 /* Preview Assets.xcassets */; };
 		A50C1A842668086A00431312 /* button_click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A50C1A832668086A00431312 /* button_click.mp3 */; };
 		A5D7646B266A2BEC00E71293 /* Torch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D7646A266A2BEC00E71293 /* Torch.swift */; };
+		A5D7646D266A2F7700E71293 /* MP3Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D7646C266A2F7700E71293 /* MP3Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A50C1A7D266805A600431312 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A50C1A832668086A00431312 /* button_click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = button_click.mp3; sourceTree = "<group>"; };
 		A5D7646A266A2BEC00E71293 /* Torch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Torch.swift; sourceTree = "<group>"; };
+		A5D7646C266A2F7700E71293 /* MP3Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MP3Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				A5D7646A266A2BEC00E71293 /* Torch.swift */,
+				A5D7646C266A2F7700E71293 /* MP3Player.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				A50C1A772668059D00431312 /* TorchView.swift in Sources */,
 				A50C1A752668059D00431312 /* TorchEApp.swift in Sources */,
 				A5D7646B266A2BEC00E71293 /* Torch.swift in Sources */,
+				A5D7646D266A2F7700E71293 /* MP3Player.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
