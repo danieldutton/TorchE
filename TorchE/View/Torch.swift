@@ -3,15 +3,11 @@ import SwiftUI
 
 struct Torch: View {
     @State var isOn = false
-    @State var sliderValue = 0.0
     
     var body: some View {
         ZStack {
             Color.blue
                 GeometryReader { geom in
-                        Slider(value: $sliderValue)
-                            .padding()
-                            .padding()
                     VStack(alignment: .center) {
                     
                         Image("Torch_Off")
