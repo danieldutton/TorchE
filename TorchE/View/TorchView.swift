@@ -1,8 +1,8 @@
-import AVFoundation
 import SwiftUI
 
-struct Torch: View {
-    @State var isOn = false
+struct TorchView: View {
+    private var torch = Torch()
+    @State private var isOn = false
     
     var body: some View {
         ZStack {
@@ -10,7 +10,7 @@ struct Torch: View {
                 GeometryReader { geom in
                     VStack(alignment: .center) {
                     
-                        Image("Torch_Off")
+                        Image(isOn ? "Torch_On" : "Torch_Off")
                         .resizable()
                         .scaledToFit()
                         .shadow(radius: 8)
@@ -24,40 +24,18 @@ struct Torch: View {
                             Toggle("", isOn: $isOn)
                                 .frame(alignment: .center)
                                 .onChange(of: isOn, perform: { value in
-                                    toggleTorch(on: isOn)
+                                    torch.toggle(on: isOn)
                                 })
                         }
                     }
             }
         }.edgesIgnoringSafeArea(.all)
     }
-    
-func toggleTorch(on: Bool) {
-    guard let device = AVCaptureDevice.default(for: .video) else { return }
-
-    if device.hasTorch {
-        do {
-            try device.lockForConfiguration()
-
-            if on == true {
-                device.torchMode = .on
-            } else {
-                device.torchMode = .off
-            }
-
-            device.unlockForConfiguration()
-        } catch {
-            print("Torch could not be used")
-        }
-    } else {
-        print("Torch is not available")
-    }
- }
 }
 
-struct Torch_Previews: PreviewProvider {
+struct TorchView_Previews: PreviewProvider {
     static var previews: some View {
-        Torch()
+        TorchView()
     }
 }
 

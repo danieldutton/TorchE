@@ -4,7 +4,7 @@ import SwiftUI
 struct TorchEApp: App {
     var body: some Scene {
         WindowGroup {
-            Torch()
+            TorchView()
         }
     }
 }
