@@ -18,10 +18,9 @@ struct TorchView: View {
                         .padding()
                         
                         ZStack {
+                            
                             Rectangle()
-                                .foregroundColor(.yellow)
-                                .cornerRadius(45.0, antialiased: true)
-                                //.shadow(radius: 30)
+                                .foregroundColor(.yellow)git 
                             Toggle("", isOn: $isOn)
                                 .frame(alignment: .center)
                                 .onChange(of: isOn, perform: { value in
